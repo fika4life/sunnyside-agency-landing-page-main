@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600;800&family=Fraunces:wght@700;900&display=swap");
 
+:root {
+  --max-width: 1440px;
+  --white: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
-  max-width: 1440px;
   height: 750px;
   background-image: url("./images/desktop/image-header.jpg");
   background-size: cover;
   background-position: bottom;
   font-family: "Fraunces", sans-serif;
-  color: #fff;
+  color: var(--white);
   position: relative;
+  margin: 0 auto;
 }
 
+header .header-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
 header h1 {
   font-size: 50px;
   text-transform: uppercase;
@@ -29,6 +47,23 @@ header h1 {
   font-family: "Barlow", sans-serif;
   font-weight: 800;
   letter-spacing: 0.04rem;
+  font-size: 1.3rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.main-nav {
+  display: flex;
+  justify-self: end;
+}
+ul.main-nav li {
+  margin-right: 1rem;
+  font-family: "Barlow";
+}
+ul.main-nav li a {
+  color: var(--white);
 }
 .down-arrow {
   position: absolute;
