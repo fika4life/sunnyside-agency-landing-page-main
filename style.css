@@ -72,10 +72,28 @@ button {
   margin-top: 2rem;
   border: none;
   background-color: var(--white);
+  position: relative;
+}
+.cta:after {
+  content: "";
+  width: 120%;
+  height: 12px;
+  position: absolute;
+  bottom: -2px;
+  left: -9px;
+  border-radius: 20%;
+  opacity: 0.3;
+}
+
+.cta.yellow:after {
+  background: var(--yellow);
+}
+.cta.red:after {
+  background: var(--red);
 }
 
 header {
-  height: 750px;
+  height: 770px;
   background-image: url("./images/desktop/image-header.jpg");
   background-size: cover;
   background-position: bottom;
