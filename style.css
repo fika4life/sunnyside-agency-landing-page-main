@@ -297,6 +297,10 @@ footer {
   padding: 4rem;
 }
 
+footer a:hover {
+  color: white;
+}
+
 .footer-text {
   display: flex;
   flex-direction: column;
