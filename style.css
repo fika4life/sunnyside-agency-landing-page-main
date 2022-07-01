@@ -336,6 +336,55 @@ footer a:hover {
   body {
     overflow-x: hidden;
   }
+
+  nav ul.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 120px;
+    background-color: #fff;
+    padding: 2em;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 100;
+  }
+
+  /* menu hamburger bars */
+  .hamburger-menu .line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+  }
+
+  /* triangle on menu */
+  nav ul.main-nav::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -20px;
+    right: 0;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+  }
+
+  ul.main-nav li.nav-item {
+    margin-bottom: 2em;
+  }
+  ul.main-nav li.nav-item a {
+    color: var(--gray);
+  }
+  ul.main-nav li.nav-item.contact {
+    margin-bottom: 0px;
+  }
+  ul.main-nav li.nav-item.contact button {
+    background-color: var(--yellow);
+  }
+
   main .main-boxes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

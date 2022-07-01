@@ -1,4 +1,7 @@
+-active state main button
+-active state learn more
 
 
 
 - responsive menu
+    -toggle menu on click
