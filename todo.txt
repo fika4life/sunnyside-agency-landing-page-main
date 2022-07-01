@@ -1,7 +1,8 @@
 -active state main button
 -active state learn more
 
-
-
 - responsive menu
     -toggle menu on click
+
+
+0 fix general responsive bugginess
