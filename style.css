@@ -171,6 +171,7 @@ section.main-boxes .text-box {
 
 section.main-boxes .text-box .text-container {
   max-width: 480px;
+  width: 80%;
 }
 
 .box-2.image-box-lg {
@@ -335,12 +336,6 @@ footer a:hover {
 
 /* responsive  */
 
-@media only screen and (max-width: 1080px) {
-  section.main-boxes .text-box .text-container {
-    width: 80%;
-  }
-}
-
 @media only screen and (max-width: 680px) {
   header {
     background-image: url("./images/mobile/image-header.jpg");
@@ -358,7 +353,8 @@ footer a:hover {
   }
 
   nav ul.main-nav {
-    display: flex;
+    display: none;
+
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -370,6 +366,10 @@ footer a:hover {
     width: 80%;
     margin: 0 auto;
     z-index: 100;
+  }
+
+  nav ul.main-nav.active {
+    display: flex;
   }
 
   /* menu hamburger bars */
